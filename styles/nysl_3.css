@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+
+body {
+		color: #888;
+		font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*---------------Header---------------*/
+
+header {
+        background: #00334d;
+		height: 100px;
+        position: fixed;
+    width: 100%;
+    z-index: 999;
+    margin-bottom: 20px;
+
+}
+
+
+#logo {
+		position: fixed;
+		top: 10px;
+		left: 50px;
+		width: 80px;
+}
+
+
+
+h1 {	
+
+	  position: fixed;
+        top: 40px;
+        left: 150px;
+		font-size: 32px;		
+		color: #fff;
+		font-weight: bold;
+    
+}
+
+h2 {
+	position: fixed;
+    top: 100px;
+    width: 100%;
+    padding-left: 50px;
+		font-size: 20px;
+		color: #00334d;
+		background-color: #99ff33;
+		line-height: 32px;
+		font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*---------------Menues---------------*/
+
+.menu {
+		position: absolute;
+        top: 20px;
+        right: 0;
+		margin: 0 1.5%;
+        line-height: 44px;
+		margin-top:10px;
+}
+
+.menu li, .menuFooter li{
+        display: inline-block; /*esto es lo que hace que los elementos de la lista que están uno debajo de otro en el html queden uno al lado del otro*/
+
+}
+
+.menu a{
+color: #99ff33;
+
+}
+
+.menu a, .menuFooter a{
+        text-decoration: none;
+}
+
+.menu li{
+        width: 80px;
+    height: 30px;
+        font-weight: bold;
+        font-size: 14px;
+    line-height: 14px;
+		letter-spacing: .5px;
+		text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+        background: #00334d;
+        padding: 7px;
+    border: 1px solid #99ff33
+}
+
+
+.menuFooter li{
+    width: 16%;
+    text-align: center;
+
+}
+
+.menuFooter a{
+    color: #fff;
+}
+.menu li:hover{
+    background: #99ff33;
+    color: #00334d;
+    border: 1px solid #00334d;
+}
+
+.menu a:hover{
+    color: #00334d;
+}
+
+.menuFooter a:hover{
+    font-weight: bold;
+}
+
+li.activo{
+    background: #99ff33;
+    border: 1px solid #00334d;
+    
+}
+
+a.activo{
+      color: #00334d;
+}
+/*---------------Page layout---------------*/
+
+
+
+h3 {
+		color: #00334d;
+		font-style:italic;
+		line-height: 44px;
+		font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+    display: inline;
+}
+
+.asterisk{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.container50, .container100{
+    position: absolute;
+   
+}
+
+.container50, .container100, .container70 {
+       top: 100px;
+		color: #000;
+		line-height: 22px;
+		padding: 40px 0 20px 50px;
+ 
+
+}
+
+.container100{
+    padding-bottom: 150px;
+}
+
+.container50 {
+        width: 50%;
+
+}
+
+.container70{
+    padding-top: 20vh;
+    width: 70%;
+}
+
+aside, .smallPic{
+    position: absolute;
+    right: 0;
+
+}
+
+.smallPic{
+    display: block;
+    top: 100px; 
+   width: 25%;
+        
+}
+
+
+aside{
+    top: 130px;
+    width: 45%;
+    height: 450px;
+}
+
+
+.info{
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20vh;
+    margin-top: 20px;
+    line-height: 24px; /*cómo hago para que después de un break quede una línea en blanco/sea más grande la separación entre líneas?*/
+   
+}
+
+/*---------------Footer---------------*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    background-color: #00334d;
+    width: 100%;
+}
+
+/*---------------Bullets---------------*/
+
+ul.level1{
+    list-style: square outside;
+    margin-left: 30px;
+}
+
+ul.level2{
+    list-style-type: circle;
+     margin-left: 30px;
+}
+ol.level1{
+    list-style-type: decimal;
+     margin-left: 30px;
+}
+
+ol.level2{
+    list-style-type:lower-alpha;
+     margin-left: 30px;
+}
+
+/*---------------Tables---------------*/
+
+.schedule, .locations {
+    margin-top: 20px;
+}
+
+.schedule th, .schedule td {
+    width: 200px;
+    text-align: center;
+}
+
+.schedule th{
+    background-color: #00334d;
+    color: #99ff33;
+}
+
+.schedule th, .locations th{
+       font-weight: bold; 
+}
+
+.schedule tr:nth-child(4n+2), .schedule tr:nth-child(4n+3), .locations tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.schedule tr:nth-child(even){
+    border-bottom: 0.5px dashed #d9d9d9;
+}
+
+.schedule tr:hover, .locations tr:hover{
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.locations th, .locations td{
+    text-align: left;
+    width: 400px;
+}
+
+.address a{
+	text-decoration: none;
+	color: black;
+}
+
+/*---------------Forms---------------*/
+
+.long, .short, select {
+ 
+padding: 7px 10px;
+  box-sizing: border-box;
+  border: none;
+ border-radius: 3px;
+  background-color: #bfff80;
+  color: #00334d;
+  
+}
+
+.long, .short {
+ 
+  margin: 8px 0 0 10px;
+}
+
+.long{
+ width: 30%;
+}
+
+.short{
+ width: 12%;
+}
+
+fieldset{
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  
+  
+}
+
+ .right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.columns{
+    display: inline-block;
+    width: 290px;
+
+}
+
+select.right{
+	margin-right: 22px;
+}
+
+button{
+    background-color: #99ff33;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    color: #00334d;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.centerColumns {
+    width: 50%;
+    margin: auto;
+}
+
+
+
+input:focus{
+     background-color: #99ff33;
+    outline: none;
+}
+
+
+.question{
+	text-align: center;
+}
+
+
+.row{
+	width: 150px;
+	margin-left: 100px
+}
+
+.row2{
+	width: 300px;
+	margin-left: 200px
+}
+
+.row input{
+
+float: left;
+ 
+}
+
+
+} /*esto quedó acá por error, pero si lo saco me aumenta la separación entre las líneas en los checkbox y radio...wtf?!*/
+
+input[type=checkbox] + label, input[type=radio] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox], input[type=radio] {
+  display: none;
+}
+
+input[type=checkbox] + label::before, input[type=radio]+label::before {
+	background-color:  #bfff80;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  margin-right: 2px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+	cursor: pointer;
+}
+
+input[type=radio] + label::before{
+	content: "\26AB";
+	font-size: 13px;
+  border-radius: 100%;
+}
+input[type=checkbox]+label::before{
+content: "\2714";
+	border-radius: 2px;
+
+}
+
+
+input[type=checkbox] + label:active::before, input[type=radio] + label:active::before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label::before, input[type=radio]:checked +label::before {
+	background-color: #99ff33;
+  color: #00334d;
+}
+
+
+iframe{
+	width: 800px;
+	height: 300px;
+}
